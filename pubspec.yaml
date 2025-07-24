@@ -24,6 +24,8 @@ dependencies:
   collection: '>=1.16.0'
   livekit_client: 2.1.0
   webview_flutter:
+  get: ^4.6.6
+  
 #  livekit_components: 1.2.2+hotfix.1
   
 
