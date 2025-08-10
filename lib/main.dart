@@ -1,15 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:logging/logging.dart';
-import 'package:intl/intl.dart';
-import 'package:telemed/AGORA/pages/index.dart';
+import 'package:get/get.dart';
+import 'package:telemed/test/test_screen.dart';
 
 void main() async {
-  // final format = DateFormat('HH:mm:ss');
-  // // configure logs for debugging
-  // Logger.root.level = Level.FINE;
-  // Logger.root.onRecord.listen((record) {
-  //   print('${format.format(record.time)}: ${record.message}');
-  // });
 
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
@@ -20,13 +13,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const IndexPage(),
+      home: HomeScreen(),
     );
   }
 }
