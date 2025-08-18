@@ -24,13 +24,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   // Sample token and websocket URL
   // final String token = liveKitTOKEN;
-  final String token = liveKitApiSecret;
+  //final String token = liveKitApiSecret;
+
   final String wsUrl = liveKitWebUrl;
 
+  final String doctorToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6InRlc3Qtcm9vbSJ9LCJpc3MiOiJteWFwaWtleSIsIm5iZiI6MTc1NDMwMTUwMywiZXhwIjoxNzU0MzAzMzAzLCJzdWIiOiJmYWhpbSJ9.fATB1ofq5LPhByLmTkJk-G6xqyPDIN1Ewz83VVaBHKw";
 
-
-  final String doctorToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTI3MzIyODcsImlzcyI6IkFQSXo0RWdVNG1TRXJ6RSIsIm5iZiI6MTc1MjczMTM4Nywic3ViIjoiZG9jdG9yXzAwMSIsInZpZGVvIjp7ImNhblB1Ymxpc2giOnRydWUsImNhblB1Ymxpc2hEYXRhIjp0cnVlLCJjYW5TdWJzY3JpYmUiOnRydWUsInJvb20iOiJBRE5NZWV0Iiwicm9vbUpvaW4iOnRydWV9fQ.fvVYi1_kiPFXlhWJ8w8W_FZl3G3YjJuVUO_nkmeAKro";
-  final String patientToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTI3MzIzMDksImlzcyI6IkFQSXo0RWdVNG1TRXJ6RSIsIm5iZiI6MTc1MjczMTQwOSwic3ViIjoicGF0aWVudF8wMDEiLCJ2aWRlbyI6eyJjYW5QdWJsaXNoIjp0cnVlLCJjYW5QdWJsaXNoRGF0YSI6dHJ1ZSwiY2FuU3Vic2NyaWJlIjp0cnVlLCJyb29tIjoiQUROTWVldCIsInJvb21Kb2luIjp0cnVlfX0.WlzeJdUbMrHO2jr4yvXXdWl_WJjz7DD0JH_cb96NtH8";
+  final String patientToken = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6InRlc3Qtcm9vbSJ9LCJpc3MiOiJteWFwaWtleSIsIm5iZiI6MTc1NDMwMTU2OSwiZXhwIjoxNzU0MzAzMzY5LCJzdWIiOiJpbXJhbiJ9.Zbgtwqo-s87__ETOJpCgGrSODzlmhdH-xpRNShQTcnI";
 
   @override
   Widget build(BuildContext context) {

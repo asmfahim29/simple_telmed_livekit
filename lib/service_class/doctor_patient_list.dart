@@ -2,9 +2,9 @@
 
 const String whereByRoomLink = "https://whereby.com/adndiginet-telemed";
 
-const String liveKitApiKey = "APIz4EgU4mSErzE";
-const String liveKitApiSecret = "ACNfif9r0ftnRjVDFd9eoJ5nRpmTlAxRRzrVukEBbnYA";
-const String liveKitWebUrl = "wss://adndiginet-telemed-ky8w3zs9.livekit.cloud";
+const String liveKitApiKey = "myapikey";
+const String liveKitApiSecret = "abcd1234SuperSecureLongKeyHere9876xyz";
+const String liveKitWebUrl = "wss://livekit.adnarchive.com";
 const String liveKitROOMNAME = "ADNDIGINET-LIVEKIT-TEST";
 const String liveKitTOKEN = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEl6NEVnVTRtU0VyekUiLCJzdWIiOiIxMTAzMDI5Iiwicm9vbV9qb2luIjp0cnVlLCJyb29tIjoidGVsZW1lZF9yb29tXzAwMSIsImlhdCI6MTc1MjcyNDQ4OH0.ggTpjc69SU0NTywQh6ATLTolDkpta3iQY_KyCZwkjEY";
 const String liveKitEnvironmentalVariables = "LIVEKIT_URL=wss://adndiginet-telemed-ky8w3zs9.livekit.cloudLIVEKIT_API_KEY=APIz4EgU4mSErzELIVEKIT_API_SECRET=ACNfif9r0ftnRjVDFd9eoJ5nRpmTlAxRRzrVukEBbnYA";

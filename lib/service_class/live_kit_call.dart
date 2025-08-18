@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:livekit_client/livekit_client.dart';
 
 class LiveKitCallScreen extends StatefulWidget {
+
   final String token;
+
   final String wsUrl;
+
   final VoidCallback onSessionEnd;
 
   const LiveKitCallScreen({
