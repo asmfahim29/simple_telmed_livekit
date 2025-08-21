@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:livekit_client/livekit_client.dart';
-import 'package:telemed/pages/prejoin.dart';
 import 'package:telemed/pages/room.dart';
 import 'package:telemed/service_class/doctor_patient_list.dart';
-import 'package:telemed/service_class/live_kit_call.dart';
+import 'package:telemed/utils/dimensions_with_getx.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -36,13 +35,12 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Join Room')),
-      body: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
+      body: Center(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _buildJoinCard(context, 'Doctor', doctorToken),
-            const SizedBox(height: 20),
+            const SizedBox(width: 20),
             _buildJoinCard(context, 'Patient', patientToken),
           ],
         ),
@@ -51,19 +49,23 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildJoinCard(BuildContext context, String role, String token) {
-    return Card(
-      child: Padding(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          children: [
-            Text('$role', style: const TextStyle(fontSize: 20)),
-            const SizedBox(height: 10),
-            ElevatedButton(
-              onPressed: () => _connect(context, token),
-              child: const Text('Join'),
-            ),
-          ],
-        ),
+    return Container(
+      height: Dimensions.height(200),
+      width: Dimensions.width(150),
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: role  == 'Doctor' ? Colors.blueAccent : Colors.greenAccent,
+        borderRadius: BorderRadius.circular(20)
+      ),
+      child: Column(
+        children: [
+          Text('$role', style: const TextStyle(fontSize: 20)),
+          const SizedBox(height: 10),
+          ElevatedButton(
+            onPressed: () => _connect(context, token),
+            child: const Text('Join'),
+          ),
+        ],
       ),
     );
   }

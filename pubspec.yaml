@@ -28,6 +28,7 @@ dependencies:
   livekit_client: 2.1.0
   webview_flutter:
   get: ^4.6.6
+  flutter_to_pdf: ^0.4.1
 #  agora_rtc_engine: 5.2.0
 #  livekit_components: 1.2.2+hotfix.1
   
